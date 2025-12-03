@@ -16,7 +16,7 @@ COPY src ./src
 RUN mvn clean package -DskipTests
 
 # Etapa 2: Imagen ligera para producción
-FROM eclipse-temurin:21-jdk-alpinesi
+FROM eclipse-temurin:21-jdk-alpine
 
 WORKDIR /app
 
